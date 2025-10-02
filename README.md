@@ -13,71 +13,11 @@ pip3 install -r requirement.txt
 
 ### 2. Prepare datasets
 
-#### CIRR
+Please refer to [here](https://github.com/miccunifi/SEARLE/tree/main#data-preparation) to prepare the benchmark datasets.
 
-Download [**CIRR dataset**](https://github.com/Cuberick-Orion/CIRR).
+### 3. Pretrained weights
 
-After downloading the dataset, ensure that the folder structure matches the following:
-
-```
-├── CIRR
-│   ├── train
-|   |   ├── [0 | 1 | 2 | ...]
-|   |   |   ├── [train-10108-0-img0.png | train-10108-0-img1.png | ...]
-
-│   ├── dev
-|   |   ├── [dev-0-0-img0.png | dev-0-0-img1.png | ...]
-
-│   ├── test1
-|   |   ├── [test1-0-0-img0.png | test1-0-0-img1.png | ...]
-
-│   ├── cirr
-|   |   ├── captions
-|   |   |   ├── cap.rc2.[train | val | test1].json
-|   |   ├── image_splits
-|   |   |   ├── split.rc2.[train | val | test1].json
-```
-
-#### FashionIQ
-
-Download [**FashionIQ dataset**](https://github.com/XiaoxiaoGuo/fashion-iq).
-
-After downloading the dataset, ensure that the folder structure matches the following:
-
-```
-├── FashionIQ
-│   ├── captions
-|   |   ├── cap.dress.[train | val | test].json
-|   |   ├── cap.toptee.[train | val | test].json
-|   |   ├── cap.shirt.[train | val | test].json
-
-│   ├── image_splits
-|   |   ├── split.dress.[train | val | test].json
-|   |   ├── split.toptee.[train | val | test].json
-|   |   ├── split.shirt.[train | val | test].json
-
-│   ├── images
-|   |   ├── [B00006M009.jpg | B00006M00B.jpg | B00006M6IH.jpg | ...]
-```
-
-#### CIRCO
-
-Download [**CIRCO**](https://github.com/miccunifi/CIRCO).
-
-After downloading the dataset, ensure that the folder structure matches the following:
-
-```
-├── CIRCO
-│   ├── annotations
-|   |   ├── [val | test].json
-
-│   ├── COCO2017_unlabeled
-|   |   ├── annotations
-|   |   |   ├──  image_info_unlabeled2017.json
-|   |   ├── unlabeled2017
-|   |   |   ├── [000000243611.jpg | 000000535009.jpg | ...]
-```
-
+Pretrained Phi models from [lincir](https://github.com/navervision/lincir) and SD models: [link](https://drive.google.com/drive/folders/1hpIpI0X26ox-uY-QdOPKDKKZlnWkftIA?usp=drive_link)
 
 ## Run the code
 ### 1. Textual Inversion
@@ -125,3 +65,5 @@ This project builds upon the following repositories:
 
 - [SEARLE](https://github.com/miccunifi/SEARLE/tree/main)
 - [lincir](https://github.com/navervision/lincir)
+
+I am grateful to the authors and contributors of these projects for making their work available to the community.  
