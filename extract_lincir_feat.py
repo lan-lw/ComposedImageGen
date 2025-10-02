@@ -68,7 +68,7 @@ def encode_with_pseudo_tokens_HF(clip_model: CLIPTextModelWithProjection, text: 
 
 # Model and processor setup
 phi_path = '/path/to/phi_best.pt'
-phi_path_2 = '/path/to/phi_best.pt'
+phi_path_2 = '/path/to/phi_best_giga.pt'
 clip_model_name = 'openai/clip-vit-large-patch14'
 clip_model_name2 = 'Geonmo/CLIP-Giga-config-fixed'
 
